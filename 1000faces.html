@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head tag contains functional data required for the page that we dont want displayed to the user-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Everything above is metadata to inform the browser how to read everything below-->
+    <title>1000 Faces</title>
+    <!--Links to the css file to instruct browser how to display the elements in the body-->
+    <link rel="stylesheet" type="text/css" href="1000faces.css">
+</head>
+<!--Body contains the elements we want displayed to the user-->
+<body>
+  <!-- Login elements are contained in the div for easy alignment-->
+    <div class="container">
+      <!--H1 is page title assigned class for styling-->
+      <h1 class="insetshadow">1000 Faces</h1>
+      <!--this block is the actual login form consisting of labeled inputs id'd for function in JS-->
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" id="submit-btn">Login</button>
+      </form>
+    </div>
+    <!--Link to the external JS for functions-->
+    <script src="1000faces.js"></script>
+  </body>
+</html>

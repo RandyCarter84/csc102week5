@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head tag contains functional data required for the page that we dont want displayed to the user-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Everything above is metadata to inform the browser how to read everything below-->
+    <title>Sound</title>
+    <!-- Links to external CSS to inform browser how to format contents of body-->
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <script src="sound.js"></script>
+</head>
+<!--Body contains elements we want displayed to the user  this all a copy paste from the gallery page just so it wasnt blank-->
+<body>
+    
+    <!--Navigation buttons contanined in the header-->
+    <header>
+        <nav>
+          <div class="home">
+            <a href="home.html"><img src="https://img.icons8.com/glyph-neue/256/home.png" alt="Home"></a>
+          </div>
+          <div class="profile">
+            <a href="Profile.html"><img src="https://img.icons8.com/ios/256/user-male-circle--v1.png"></a>
+          </div>
+        </nav>
+    </header>
+    
+    <!--page title-->  
+    <h1 class="insetshadow">Sound</h1>
+
+    <!--separated audio elements in individual Divs-->
+    <div class="blue-box">
+      <a onclick="audio1();" class="buttonplay"><span>Play</span></a>
+    </div>
+
+    <!--the button design i have been using is normally an <a> bacause the button tag has a background layer that messes with the aesthetic but the onclick function required the button tag on these-->
+    <div class="blue-box2">
+      <button onclick="start();" id = "startButton" class="buttonPlayStart"><span>START</span></button>
+      <button onclick="stop();" id = "stopButton" class="buttonPlayStop"><span>STOP</span></button>
+    </div>
+
+    <div class="blue-box3">
+      <audio controls class="player1">
+        <source src = "heartwave.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+      
+</body>
+</html>

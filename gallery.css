@@ -1,0 +1,403 @@
+/* light to dark blue gradient for background*/
+body {
+    background: linear-gradient(to right, #2f2e60, #0f0c38);
+    color: #fff;
+}
+
+  /*sets the formatting for the header, dark blue to purple radial gradiant from center to add contrast for the nav elements*/
+  header {
+    width: 100%;
+    background-color: rgb(25, 0, 64);
+    background-image: radial-gradient(circle at center, rgb(25,0,64), rgb(58 43 114 / 89%));
+    border-bottom: 1px solid #36486e;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0px;
+}
+   /* assign color for home button */
+  .home a {
+    color: #333;
+  }
+  
+  /* assign color and position for profile button*/
+  .profile a {
+    position: absolute;
+    top: 1%;
+    right: -128px;
+    color: #333;
+  }
+  
+  
+  /* assign color for title head. Padding for some reason cannot be assigned to thead so i got creative and used a transparant border to get the right spacing*/
+  thead {
+    color: #fff;
+    border: 10px solid transparent;
+  }
+
+  /*shinks picture to fit in the cell*/
+  img {
+    max-width: 25%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  /*sets size, style, and font for page title in h1*/
+  h1 {
+    width: 100%;
+    position: absolute;
+    top:1%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 75px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* sets color and shadows for text to try to achieve an engraved affect*/
+  h1.insetshadow {
+    color: #1a1e36;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111111, 2px 2px 1px #42434c;
+  }
+
+  /* Copy and paste of h1 but needed to reposition this element and this was the only way i could think to do it*/
+  h2 {
+    width: 100%;
+    position: absolute;
+    top:15%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 75px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h2.insetshadow {
+    color: #1a1e36;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111111, 2px 2px 1px #42434c;
+  }
+
+  /*sets position, size, and shape of the table*/
+  table {
+    position: absolute;
+    left: 3%;
+    top: 35%;
+    width: 50%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* dark blue to very dark blue gradient */
+    background: linear-gradient(to right, #0f0c38, #050d1d);
+  }
+  
+  /* very dark blue to black gradient on even rows */
+  tr:nth-child(2n) {
+    background: linear-gradient(to right, #050d1d, #000);
+  }
+  
+  td {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  }
+
+
+/*sets position and shadow for buttons*/
+.button {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    position: absolute;
+    left: 80%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*styles the button, clippath to cut into polygon, radial gradiant to get metal look, transitio effect to indicate mouse over.*/
+  .button span {
+    display:inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #484647;
+    background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+  }
+  
+  .button:hover span {
+    background-position-y: -50px;
+  }
+
+  /* buttons 2,3 and 4 are clones of button one, probabably a cleaner way posision different elements, but i havnt found it yet*/
+  .button2 {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    position: absolute;
+    left: 49%;
+    bottom: -64%;
+    transform: translate(-50%, -50%);
+}
+    
+  .button2 span {
+    display:inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #484647;
+    background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+  }
+  
+  .button2:hover span {
+    background-position-y: -50px;
+  }
+
+  .button3 {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    position: absolute;
+    left: 90%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .button3 span {
+    display:inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #484647;
+    background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+  }
+  
+  .button3:hover span {
+    background-position-y: -50px;
+  }
+
+  .button4 {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    position: absolute;
+    left: 50%;
+    bottom: -51%;
+    transform: translate(-50%, -50%);
+}
+    
+  .button4 span {
+    display:inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-align: center;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #484647;
+    background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+  }
+  
+  .button4:hover span {
+    background-position-y: -50px;
+  }
+
+  
+.buttonplay {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translate(-50%, -50%);
+}
+
+/*styles the button, clippath to cut into polygon, radial gradiant to get metal look, transitio effect to indicate mouse over.*/
+.buttonplay span {
+  display:inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  text-align: center;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  background-color: #484647;
+  background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+  background-repeat: no-repeat;
+  transition: background-position-y ease-in-out 250ms;
+}
+
+.buttonplay:hover span {
+  background-position-y: -50px;
+}
+
+.buttonPlayStart {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(53, 53, 53));
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  position: absolute;
+  left: 45%;
+  bottom: 35%;
+  transform: translate(-50%, -50%);
+}
+
+/*styles the button, clippath to cut into polygon, radial gradiant to get metal look, transitio effect to indicate mouse over.*/
+.buttonPlayStart span {
+  display:inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  text-align: center;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  background-color: #484647;
+  background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+  background-repeat: no-repeat;
+  transition: background-position-y ease-in-out 250ms;
+}
+
+.buttonPlayStart:hover span {
+  background-position-y: -50px;
+}
+
+.buttonPlayStop {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(53, 53, 53));
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  position: absolute;
+  left: 65%;
+  bottom: 35%;
+  transform: translate(-50%, -50%);
+}
+
+/*styles the button, clippath to cut into polygon, radial gradiant to get metal look, transitio effect to indicate mouse over.*/
+.buttonPlayStop span {
+  display:inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  text-align: center;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  background-color: #484647;
+  background-image: radial-gradient(200% 70% at center 20%, rgb(255 254 253) -30%, rgb(4 4 3) 49%, rgb(4 4 4) 50%, rgb(72 70 71) 150%);
+  background-repeat: no-repeat;
+  transition: background-position-y ease-in-out 250ms;
+}
+
+.buttonPlayStop:hover span {
+  background-position-y: -50px;
+}
+
+/*posistion data for input form*/
+.my-div {
+    position: absolute;
+    left: 75%;
+    bottom: 30%
+}
+
+/*posistion data for edit form*/
+.my-div2 {
+    position: absolute;
+    left: 75%;
+    bottom: 30%
+}
+
+/*center form labels and make them wite for contrast*/
+label {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+/*makes input field blue with white writting*/
+input {
+    background-color: #2f2e60;
+    color: #fff;
+}
+
+/*positions the audio player*/
+.player1 {
+position: absolute;
+top: 40%;
+left: 30%;
+}
+
+/*adds a background gradiant tothe player to better match site aestetic*/
+audio::-webkit-media-controls-panel {
+  background-color: #000;
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(53, 53, 53));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+}
+
+/*containers for audio elements darker gradients then backgroud, box shadows for depth, size and positions*/
+.blue-box {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  opacity: 50%;
+  background: linear-gradient(to right, #15114e, #081530);
+  box-shadow: 2px 2px 5px 0 #fff, -2px -2px 5px 0 #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box2 {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  opacity: 50%;
+  background: linear-gradient(to right, #100d3b, #060f24);
+  box-shadow: 2px 2px 5px 0 #fff, -2px -2px 5px 0 #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box3 {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 30%;
+  height: 30%;
+  opacity: 50%;
+  background: linear-gradient(to right, #0c0a2e, #040a16);
+  box-shadow: 2px 2px 5px 0 #fff, -2px -2px 5px 0 #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
